@@ -1,0 +1,1100 @@
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../FreeRTOS/croutine.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/croutine.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/croutine.c"
+Finished building: "../FreeRTOS/croutine.c"
+ 
+Building file: "../FreeRTOS/event_groups.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/event_groups.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/event_groups.c"
+Finished building: "../FreeRTOS/event_groups.c"
+ 
+Building file: "../FreeRTOS/list.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/list.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/list.c"
+Finished building: "../FreeRTOS/list.c"
+ 
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/port.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Finished building: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+ 
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/portasm.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+Finished building: "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+ 
+Building file: "../FreeRTOS/timers.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/timers.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/timers.c"
+Finished building: "../FreeRTOS/timers.c"
+ 
+Building file: "../FreeRTOS/stream_buffer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/stream_buffer.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/stream_buffer.c"
+Finished building: "../FreeRTOS/stream_buffer.c"
+ 
+Building file: "../FreeRTOS/portable/MemMang/heap_4.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/MemMang/heap_4.d_raw" --obj_directory="FreeRTOS/portable/MemMang"  "../FreeRTOS/portable/MemMang/heap_4.c"
+Finished building: "../FreeRTOS/portable/MemMang/heap_4.c"
+ 
+Building file: "../FreeRTOS/queue.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/queue.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/queue.c"
+Finished building: "../FreeRTOS/queue.c"
+ 
+Building file: "../FreeRTOS/tasks.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/tasks.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/tasks.c"
+Finished building: "../FreeRTOS/tasks.c"
+ 
+Building target: "Program1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Program1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Program1_linkInfo.xml" --rom_model -o "Program1.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Program1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "Program1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Program1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Program1_linkInfo.xml" --rom_model -o "Program1.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined     first referenced           
+  symbol           in file                
+ ---------     ----------------           
+ 
+>> Compilation failure
+ vAssertCalled ./FreeRTOS/event_groups.obj
+makefile:158: recipe for target 'Program1.out' failed
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Program1.out" not built
+gmake[1]: *** [Program1.out] Error 1
+gmake: *** [all] Error 2
+makefile:154: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 13: error #148: declaration is incompatible with "void vAssertCalled(const char *, unsigned long)" (declared at line 82 of "P:/ENCE464/Program1/FreeRTOSConfig.h")
+"../main.c", line 16: error #128: expected a statement
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 18: error #20: identifier "true" is undefined
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "Program1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Program1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Program1_linkInfo.xml" --rom_model -o "Program1.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Program1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "Program1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Program1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Program1_linkInfo.xml" --rom_model -o "Program1.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Program1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../FreeRTOS/croutine.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/croutine.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/croutine.c"
+Finished building: "../FreeRTOS/croutine.c"
+ 
+Building file: "../FreeRTOS/list.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/list.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/list.c"
+Finished building: "../FreeRTOS/list.c"
+ 
+Building file: "../FreeRTOS/event_groups.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/event_groups.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/event_groups.c"
+Finished building: "../FreeRTOS/event_groups.c"
+ 
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/portasm.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+Finished building: "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+ 
+Building file: "../FreeRTOS/timers.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/timers.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/timers.c"
+Finished building: "../FreeRTOS/timers.c"
+ 
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/port.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Finished building: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+ 
+Building file: "../FreeRTOS/stream_buffer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/stream_buffer.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/stream_buffer.c"
+Finished building: "../FreeRTOS/stream_buffer.c"
+ 
+Building file: "../FreeRTOS/queue.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/queue.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/queue.c"
+Finished building: "../FreeRTOS/queue.c"
+ 
+Building file: "../FreeRTOS/portable/MemMang/heap_4.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/MemMang/heap_4.d_raw" --obj_directory="FreeRTOS/portable/MemMang"  "../FreeRTOS/portable/MemMang/heap_4.c"
+Finished building: "../FreeRTOS/portable/MemMang/heap_4.c"
+ 
+Building file: "../FreeRTOS/tasks.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/tasks.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/tasks.c"
+Finished building: "../FreeRTOS/tasks.c"
+ 
+Building target: "Program1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Program1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Program1_linkInfo.xml" --rom_model -o "Program1.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Program1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 29: error #20: identifier "output" is undefined
+"../main.c", line 30: error #80: expected a type specifier
+"../main.c", line 32: error #8: missing closing quote
+"../main.c", line 32: error #20: identifier "GPIOF" is undefined
+"../main.c", line 32: error #66: expected a ";"
+"../main.c", line 35: error #20: identifier "launchpad" is undefined
+"../main.c", line 35: error #66: expected a ";"
+"../main.c", line 47: error #20: identifier "_________________________________________________________________" is undefined
+"../main.c", line 49: error #66: expected a ";"
+"../main.c", line 53: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 91: warning #179-D: function "NullTaskFunc" was declared but never referenced
+9 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 32: error #8: missing closing quote
+"../main.c", line 32: error #20: identifier "GPIOF" is undefined
+"../main.c", line 32: error #66: expected a ";"
+"../main.c", line 35: error #20: identifier "launchpad" is undefined
+"../main.c", line 35: error #66: expected a ";"
+"../main.c", line 47: error #20: identifier "_________________________________________________________________" is undefined
+"../main.c", line 49: error #66: expected a ";"
+"../main.c", line 53: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 91: warning #179-D: function "NullTaskFunc" was declared but never referenced
+7 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "Program1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Program1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Program1_linkInfo.xml" --rom_model -o "Program1.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Program1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Program1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Program1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "Program1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Program1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Program1_linkInfo.xml" --rom_model -o "Program1.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Program1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 1: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+Building file: "../FreeRTOS/croutine.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/croutine.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/croutine.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/croutine.obj' failed
+"../FreeRTOS/croutine.c", line 29: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/croutine.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/croutine.obj] Error 1
+Building file: "../FreeRTOS/event_groups.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/event_groups.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/event_groups.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/event_groups.obj' failed
+"../FreeRTOS/event_groups.c", line 38: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/event_groups.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/event_groups.obj] Error 1
+Building file: "../FreeRTOS/list.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/list.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/list.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/list.obj' failed
+"../FreeRTOS/list.c", line 37: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/list.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/list.obj] Error 1
+Building file: "../FreeRTOS/queue.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/queue.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/queue.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/queue.obj' failed
+"../FreeRTOS/queue.c", line 37: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/queue.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/queue.obj] Error 1
+Building file: "../FreeRTOS/stream_buffer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/stream_buffer.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/stream_buffer.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/stream_buffer.obj' failed
+"../FreeRTOS/stream_buffer.c", line 39: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/stream_buffer.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/stream_buffer.obj] Error 1
+Building file: "../FreeRTOS/tasks.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/tasks.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/tasks.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/tasks.obj' failed
+"../FreeRTOS/tasks.c", line 39: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/tasks.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/tasks.obj] Error 1
+Building file: "../FreeRTOS/timers.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/timers.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/timers.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/timers.obj' failed
+"../FreeRTOS/timers.c", line 37: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/timers.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/timers.obj] Error 1
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/port.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+ 
+>> Compilation failure
+FreeRTOS/portable/CCS/ARM_CM4F/subdir_rules.mk:9: recipe for target 'FreeRTOS/portable/CCS/ARM_CM4F/port.obj' failed
+"../FreeRTOS/portable/CCS/ARM_CM4F/port.c", line 34: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/portable/CCS/ARM_CM4F/port.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/portable/CCS/ARM_CM4F/port.obj] Error 1
+Building file: "../FreeRTOS/portable/MemMang/heap_4.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/MemMang/heap_4.d_raw" --obj_directory="FreeRTOS/portable/MemMang"  "../FreeRTOS/portable/MemMang/heap_4.c"
+ 
+>> Compilation failure
+FreeRTOS/portable/MemMang/subdir_rules.mk:9: recipe for target 'FreeRTOS/portable/MemMang/heap_4.obj' failed
+"../FreeRTOS/portable/MemMang/heap_4.c", line 45: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/portable/MemMang/heap_4.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/portable/MemMang/heap_4.obj] Error 1
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/portasm.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+Finished building: "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 1: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+Building file: "../FreeRTOS/croutine.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/croutine.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/croutine.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/croutine.obj' failed
+"../FreeRTOS/croutine.c", line 29: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/croutine.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/croutine.obj] Error 1
+Building file: "../FreeRTOS/event_groups.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/event_groups.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/event_groups.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/event_groups.obj' failed
+"../FreeRTOS/event_groups.c", line 38: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/event_groups.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/event_groups.obj] Error 1
+Building file: "../FreeRTOS/list.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/list.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/list.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/list.obj' failed
+"../FreeRTOS/list.c", line 37: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/list.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/list.obj] Error 1
+Building file: "../FreeRTOS/queue.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/queue.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/queue.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/queue.obj' failed
+"../FreeRTOS/queue.c", line 37: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/queue.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/queue.obj] Error 1
+Building file: "../FreeRTOS/stream_buffer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/stream_buffer.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/stream_buffer.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/stream_buffer.obj' failed
+"../FreeRTOS/stream_buffer.c", line 39: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/stream_buffer.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/stream_buffer.obj] Error 1
+Building file: "../FreeRTOS/tasks.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/tasks.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/tasks.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/tasks.obj' failed
+"../FreeRTOS/tasks.c", line 39: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/tasks.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/tasks.obj] Error 1
+Building file: "../FreeRTOS/timers.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/timers.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/timers.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/timers.obj' failed
+"../FreeRTOS/timers.c", line 37: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/timers.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/timers.obj] Error 1
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/port.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+ 
+>> Compilation failure
+FreeRTOS/portable/CCS/ARM_CM4F/subdir_rules.mk:9: recipe for target 'FreeRTOS/portable/CCS/ARM_CM4F/port.obj' failed
+"../FreeRTOS/portable/CCS/ARM_CM4F/port.c", line 34: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/portable/CCS/ARM_CM4F/port.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/portable/CCS/ARM_CM4F/port.obj] Error 1
+Building file: "../FreeRTOS/portable/MemMang/heap_4.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/MemMang/heap_4.d_raw" --obj_directory="FreeRTOS/portable/MemMang"  "../FreeRTOS/portable/MemMang/heap_4.c"
+ 
+>> Compilation failure
+FreeRTOS/portable/MemMang/subdir_rules.mk:9: recipe for target 'FreeRTOS/portable/MemMang/heap_4.obj' failed
+"../FreeRTOS/portable/MemMang/heap_4.c", line 45: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/portable/MemMang/heap_4.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/portable/MemMang/heap_4.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 1: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+Building file: "../FreeRTOS/croutine.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/croutine.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/croutine.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/croutine.obj' failed
+"../FreeRTOS/croutine.c", line 29: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/croutine.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/croutine.obj] Error 1
+Building file: "../FreeRTOS/event_groups.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/event_groups.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/event_groups.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/event_groups.obj' failed
+"../FreeRTOS/event_groups.c", line 38: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/event_groups.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/event_groups.obj] Error 1
+Building file: "../FreeRTOS/list.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/list.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/list.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/list.obj' failed
+"../FreeRTOS/list.c", line 37: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/list.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/list.obj] Error 1
+Building file: "../FreeRTOS/queue.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/queue.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/queue.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/queue.obj' failed
+"../FreeRTOS/queue.c", line 37: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/queue.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/queue.obj] Error 1
+Building file: "../FreeRTOS/stream_buffer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/stream_buffer.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/stream_buffer.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/stream_buffer.obj' failed
+"../FreeRTOS/stream_buffer.c", line 39: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/stream_buffer.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/stream_buffer.obj] Error 1
+Building file: "../FreeRTOS/tasks.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/tasks.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/tasks.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/tasks.obj' failed
+"../FreeRTOS/tasks.c", line 39: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/tasks.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/tasks.obj] Error 1
+Building file: "../FreeRTOS/timers.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/timers.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/timers.c"
+ 
+>> Compilation failure
+FreeRTOS/subdir_rules.mk:9: recipe for target 'FreeRTOS/timers.obj' failed
+"../FreeRTOS/timers.c", line 37: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/timers.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/timers.obj] Error 1
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/port.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+ 
+>> Compilation failure
+FreeRTOS/portable/CCS/ARM_CM4F/subdir_rules.mk:9: recipe for target 'FreeRTOS/portable/CCS/ARM_CM4F/port.obj' failed
+"../FreeRTOS/portable/CCS/ARM_CM4F/port.c", line 34: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/portable/CCS/ARM_CM4F/port.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/portable/CCS/ARM_CM4F/port.obj] Error 1
+Building file: "../FreeRTOS/portable/MemMang/heap_4.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/MemMang/heap_4.d_raw" --obj_directory="FreeRTOS/portable/MemMang"  "../FreeRTOS/portable/MemMang/heap_4.c"
+ 
+>> Compilation failure
+FreeRTOS/portable/MemMang/subdir_rules.mk:9: recipe for target 'FreeRTOS/portable/MemMang/heap_4.obj' failed
+"../FreeRTOS/portable/MemMang/heap_4.c", line 45: fatal error #1965: cannot open source file "FreeRTOS.h"
+1 catastrophic error detected in the compilation of "../FreeRTOS/portable/MemMang/heap_4.c".
+Compilation terminated.
+gmake: *** [FreeRTOS/portable/MemMang/heap_4.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 5: fatal error #1965: cannot open source file "inc/hw_memmap.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/portasm.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+Finished building: "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../FreeRTOS/croutine.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/croutine.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/croutine.c"
+Finished building: "../FreeRTOS/croutine.c"
+ 
+Building file: "../FreeRTOS/event_groups.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/event_groups.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/event_groups.c"
+Finished building: "../FreeRTOS/event_groups.c"
+ 
+Building file: "../FreeRTOS/list.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/list.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/list.c"
+Finished building: "../FreeRTOS/list.c"
+ 
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/port.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Finished building: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+ 
+Building file: "../FreeRTOS/stream_buffer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/stream_buffer.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/stream_buffer.c"
+Finished building: "../FreeRTOS/stream_buffer.c"
+ 
+Building file: "../FreeRTOS/timers.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/timers.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/timers.c"
+Finished building: "../FreeRTOS/timers.c"
+ 
+Building file: "../FreeRTOS/portable/MemMang/heap_4.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/MemMang/heap_4.d_raw" --obj_directory="FreeRTOS/portable/MemMang"  "../FreeRTOS/portable/MemMang/heap_4.c"
+Finished building: "../FreeRTOS/portable/MemMang/heap_4.c"
+ 
+Building file: "../FreeRTOS/queue.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/queue.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/queue.c"
+Finished building: "../FreeRTOS/queue.c"
+ 
+Building file: "../FreeRTOS/tasks.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/tasks.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/tasks.c"
+Finished building: "../FreeRTOS/tasks.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 7: fatal error #1965: cannot open source file "driverlib/adc.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 5: fatal error #1965: cannot open source file "inc/hw_memmap.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../FreeRTOS/croutine.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/croutine.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/croutine.c"
+Finished building: "../FreeRTOS/croutine.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../FreeRTOS/list.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/list.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/list.c"
+Finished building: "../FreeRTOS/list.c"
+ 
+Building file: "../FreeRTOS/event_groups.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/event_groups.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/event_groups.c"
+Finished building: "../FreeRTOS/event_groups.c"
+ 
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/portasm.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+Finished building: "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+ 
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/port.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Finished building: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+ 
+Building file: "../FreeRTOS/timers.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/timers.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/timers.c"
+Finished building: "../FreeRTOS/timers.c"
+ 
+Building file: "../FreeRTOS/stream_buffer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/stream_buffer.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/stream_buffer.c"
+Finished building: "../FreeRTOS/stream_buffer.c"
+ 
+Building file: "../FreeRTOS/portable/MemMang/heap_4.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/MemMang/heap_4.d_raw" --obj_directory="FreeRTOS/portable/MemMang"  "../FreeRTOS/portable/MemMang/heap_4.c"
+Finished building: "../FreeRTOS/portable/MemMang/heap_4.c"
+ 
+Building file: "../FreeRTOS/queue.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/queue.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/queue.c"
+Finished building: "../FreeRTOS/queue.c"
+ 
+Building file: "../FreeRTOS/tasks.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/tasks.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/tasks.c"
+Finished building: "../FreeRTOS/tasks.c"
+ 
+Building target: "Program1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Program1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Program1_linkInfo.xml" --rom_model -o "Program1.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined              first referenced
+  symbol                    in file     
+ ---------              ----------------
+ GPIOPadConfigSet       ./main.obj      
+ GPIOPinTypeGPIOOutput  ./main.obj      
+ GPIOPinWrite           ./main.obj      
+ SysCtlClockSet         ./main.obj      
+ SysCtlPeripheralEnable ./main.obj      
+ SysCtlPeripheralReady  ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+ 
+>> Compilation failure
+error #10010: errors encountered during linking; "Program1.out" not built
+makefile:158: recipe for target 'Program1.out' failed
+gmake[1]: *** [Program1.out] Error 1
+gmake: *** [all] Error 2
+makefile:154: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../FreeRTOS/croutine.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/croutine.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/croutine.c"
+Finished building: "../FreeRTOS/croutine.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../FreeRTOS/list.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/list.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/list.c"
+Finished building: "../FreeRTOS/list.c"
+ 
+Building file: "../FreeRTOS/event_groups.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/event_groups.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/event_groups.c"
+Finished building: "../FreeRTOS/event_groups.c"
+ 
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/portasm.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+Finished building: "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+ 
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/port.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Finished building: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+ 
+Building file: "../FreeRTOS/timers.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/timers.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/timers.c"
+Finished building: "../FreeRTOS/timers.c"
+ 
+Building file: "../FreeRTOS/stream_buffer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/stream_buffer.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/stream_buffer.c"
+Finished building: "../FreeRTOS/stream_buffer.c"
+ 
+Building file: "../FreeRTOS/portable/MemMang/heap_4.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/MemMang/heap_4.d_raw" --obj_directory="FreeRTOS/portable/MemMang"  "../FreeRTOS/portable/MemMang/heap_4.c"
+Finished building: "../FreeRTOS/portable/MemMang/heap_4.c"
+ 
+Building file: "../FreeRTOS/queue.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/queue.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/queue.c"
+Finished building: "../FreeRTOS/queue.c"
+ 
+Building file: "../FreeRTOS/tasks.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/tasks.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/tasks.c"
+Finished building: "../FreeRTOS/tasks.c"
+ 
+Building target: "Program1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Program1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Program1_linkInfo.xml" --rom_model -o "Program1.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Program1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Program1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Program1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Program1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "Program1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Program1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Program1_linkInfo.xml" --rom_model -o "Program1.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Program1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Program1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Program1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Program1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Program1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 59: warning #179-D: function "BlinkLED" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Program1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Program1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Program1_linkInfo.xml" --rom_model -o "Program1.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Program1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 88: warning #179-D: function "NullTaskFunc" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Program1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Program1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Program1_linkInfo.xml" --rom_model -o "Program1.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Program1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Program1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Program1/FreeRTOS/include" --include_path="P:/ENCE464/Program1/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building target: "Program1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Program1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Program1_linkInfo.xml" --rom_model -o "Program1.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Program1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Program1 ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Program1.out' is up to date.
+
+**** Build Finished ****
