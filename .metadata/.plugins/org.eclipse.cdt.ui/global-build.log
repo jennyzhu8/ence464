@@ -38463,3 +38463,11 @@ gmake[1]: 'Blinky.out' is up to date.
 gmake[1]: 'Blinky.out' is up to date.
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project Blinky ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Blinky.out' is up to date.
+
+**** Build Finished ****
