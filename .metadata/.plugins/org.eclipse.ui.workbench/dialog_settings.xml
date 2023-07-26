@@ -4,12 +4,17 @@
 		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.FileSystem"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.cdt.ui.importWizardCategory"/>
 		</list>
 	</section>
 	<section name="FileSystemImportWizard">
 		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\ti\TivaWare_C_Series-2.2.0.295\utils"/>
+			<item value="\\file\Usersb$\bth74\Home\Downloads\FreeRTOS-KernelV10.5.1 (1)\FreeRTOS-KernelV10.5.1"/>
+			<item value="C:\ti\TivaWare_C_Series-2.2.0.295\third_party"/>
+			<item value="\\file\Usersb$\bth74\Home\Downloads\FreeRTOS_demo_Source_for_Wk-2_tutorial_v2"/>
 			<item value="\\file\Usersb$\bth74\Home\My Documents\University\FreeRTOS-KernelV10.5.1\FreeRTOS-KernelV10.5.1"/>
 		</list>
 	</section>
