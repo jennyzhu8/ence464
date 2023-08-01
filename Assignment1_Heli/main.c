@@ -11,7 +11,8 @@
 #include "driverlib/pwm.h"
 #include "driverlib/sysctl.h"
 #include "utils/uartstdio.h"
-
+#include "driverlib/rom.h"
+#include "driverlib/uart.h"
 
 /**
  * main.c
@@ -21,12 +22,43 @@ static void NullTaskFunc(void *);
 static void Blink_LED_task(void *);
 static void ADC_task(void *);
 
+void
+ConfigureUART(void)
+{
+    //
+    // Enable the GPIO Peripheral used by the UART.
+    //
+    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
+
+    //
+    // Enable UART0
+    //
+    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_UART0);
+
+    //
+    // Configure GPIO Pins for UART mode.
+    //
+    ROM_GPIOPinConfigure(GPIO_PA0_U0RX);
+    ROM_GPIOPinConfigure(GPIO_PA1_U0TX);
+    ROM_GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
+
+    //
+    // Use the internal 16MHz oscillator as the UART clock source.
+    //
+    UARTClockSourceSet(UART0_BASE, UART_CLOCK_PIOSC);
+
+    //
+    // Initialize the UART for console I/O.
+    //
+    UARTStdioConfig(0, 115200, 16000000);
+}
+
 int main(void)
 {
     // Set the clock rate to 80 MHz
     SysCtlClockSet (SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN | SYSCTL_XTAL_16MHZ);
 
-
+    ConfigureUART();
     //
     // Enable the ADC0 module.
     //
@@ -84,7 +116,7 @@ int main(void)
         while(1); // Oh no! Must not have had enough memory to create task.
     }
 
-    if (pdTRUE != xTaskCreate(ADC_task, "ADC Task", 32, (void *)4, 5, NULL))
+    if (pdTRUE != xTaskCreate(ADC_task, "ADC Task", 32, (void *)4, 1, NULL))
     {
          while (1) ; // error creating task, out of memory?
     }
@@ -95,6 +127,8 @@ int main(void)
     while(1);
 
 }
+
+
 
 //Blinky function
 
@@ -117,6 +151,7 @@ void Blink_LED_task(void *pvParameters) {
         // XOR toggles the bit on/off each time this runs.
         currentValue ^= whichBit;
         GPIOPinWrite(GPIO_PORTF_BASE, whichBit, currentValue);
+
         // Suspend this task (so others may run) for 125ms
         // or as close as we can get with the current RTOS tick setting.
         // (vTaskDelay takes scheduler ticks as its parameter, so use the
@@ -130,6 +165,7 @@ void Blink_LED_task(void *pvParameters) {
 static void ADC_task(void *pvParameters)
 {
     uint32_t ui32Value;
+    uint32_t altitude_buffer[10];
 
     while(1)
     {
@@ -147,8 +183,9 @@ static void ADC_task(void *pvParameters)
         // Read the value from the ADC.
         //
         ADCSequenceDataGet(ADC0_BASE, 0, &ui32Value);
-
-        UARTprintf("HI");
+        // Min Altitude = 2860, Max Altitude = 1200
+        UARTprintf("Altitude = %d ", ui32Value);
+        vTaskDelay(1000);
     }
 }
 static void NullTaskFunc(void *pvParameters)
