@@ -14,6 +14,8 @@
 #include "driverlib/rom.h"
 #include "driverlib/uart.h"
 
+#define BUF_SIZE 10
+
 /**
  * main.c
  */
@@ -55,6 +57,7 @@ ConfigureUART(void)
 
 int main(void)
 {
+
     // Set the clock rate to 80 MHz
     SysCtlClockSet (SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN | SYSCTL_XTAL_16MHZ);
 
@@ -90,22 +93,9 @@ int main(void)
     GPIOPadConfigSet(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_STRENGTH_4MA, GPIO_PIN_TYPE_STD);
     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0); // off by default
 
-    // For read ADC task
-    /*
-    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOE);
-    while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOE)) ; // busy-wait until GPIOE's bus clock is ready
 
-    GPIOPinTypeGPIOInput(GPIO_PORTE_BASE, GPIO_PIN_4); // PE_4 as output
 
-    SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC0);
-     */
 
-    /*
-    if (pdTRUE != xTaskCreate(BlinkLED, "Blinker", 32, (void *)1, 4, NULL))
-    { // (void *)1 is our pvParameters for our task func specifying PF_1
-     while (1) ; // error creating task, out of memory?
-    }
-*/
     if (pdTRUE != xTaskCreate(Blink_LED_task, "Blinker Blue", 32, (void *)2, 4, NULL))
     { // (void *)2 is our pvParameters for our task func specifying PF_2
          while (1) ; // error creating task, out of memory?
@@ -127,8 +117,6 @@ int main(void)
     while(1);
 
 }
-
-
 
 //Blinky function
 
@@ -164,8 +152,13 @@ void Blink_LED_task(void *pvParameters) {
 
 static void ADC_task(void *pvParameters)
 {
+    uint16_t i;
     uint32_t ui32Value;
-    uint32_t altitude_buffer[10];
+    uint32_t alt_buffer[BUF_SIZE];
+    uint8_t index = 0;
+    int32_t alt = 0;
+    uint32_t height;
+
 
     while(1)
     {
@@ -183,9 +176,18 @@ static void ADC_task(void *pvParameters)
         // Read the value from the ADC.
         //
         ADCSequenceDataGet(ADC0_BASE, 0, &ui32Value);
+        alt_buffer[index] = ui32Value;
+        index = (index + 1) % BUF_SIZE;
+        alt = 0;
+        for (i=0; i < BUF_SIZE; i++) {
+            alt = alt + alt_buffer[i];
+        }
+        alt = alt / BUF_SIZE;
         // Min Altitude = 2860, Max Altitude = 1200
-        UARTprintf("Altitude = %d ", ui32Value);
-        vTaskDelay(1000);
+        height = (1/alt)*1200; // Not sure about this, trying to get a percentage of height
+        UARTprintf("Altitude = %d ", alt);
+        vTaskDelay(200);
+
     }
 }
 static void NullTaskFunc(void *pvParameters)
