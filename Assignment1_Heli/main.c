@@ -184,8 +184,14 @@ static void ADC_task(void *pvParameters)
         }
         alt = alt / BUF_SIZE;
         // Min Altitude = 2860, Max Altitude = 1200
-        height = (1/alt)*1200; // Not sure about this, trying to get a percentage of height
-        UARTprintf("Altitude = %d ", alt);
+        //height = (1/alt)*1200; // Not sure about this, trying to get a percentage of height
+        
+        //getting height between 1660 and 0
+        hieght = alt-1200;
+        //getting height as a percentage
+        height = 100 * (1 - (height/1660))
+
+        UARTprintf("Altitude = %d ", hieght);
         vTaskDelay(200);
 
     }
