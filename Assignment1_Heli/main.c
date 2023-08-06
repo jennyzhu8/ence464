@@ -231,6 +231,9 @@ static void ADC_task(void *pvParameters)
     uint8_t index = 0;
     int32_t alt = 0;
     uint32_t height;
+    uint32_t target_height = 80;
+    uint32_t pwm;
+    uint32_t count;
 
 
     while(1)
@@ -252,25 +255,47 @@ static void ADC_task(void *pvParameters)
         alt_buffer[index] = ui32Value;
         index = (index + 1) % BUF_SIZE;
         alt = 0;
+        count = 0;
         for (i=0; i < BUF_SIZE; i++) {
-            alt = alt + alt_buffer[i];
+            if (alt_buffer[i] != 0){
+                alt = alt + alt_buffer[i];
+                count++;
+            }
+
         }
-        alt = alt / BUF_SIZE;
+        alt = alt / count;
         // Values depend on the rig you are using
         // Min Altitude = 2230, Max Altitude = 1000
         // For emulator to 100%
         // Min Alt = 3030, Max alt = 1900
         // Emulator to max which is 133%
         // Min alt =3030, max alt = 1330
+        // PWM hover is 53%
 
 
         //getting height between 1660 and 0
         height = alt-1330;
         //getting height as a percentage
         height =  (133 - ((height*133)/1700));
+        if (height > 134){
+            height = 0;
+        }
 
-        UARTprintf("Altitude = %d ", height);
+        UARTprintf("Altitude = %d ",height);
+
+        if (height > (target_height -2) && height < (target_height + 2))
+        {
+            UARTprintf("STOP");
+            setPWM (PWM_START_RATE_HZ, 53);
+        } else {
+            pwm = (target_height - height + 53);
+            if (pwm > 100){
+                pwm = 100;
+            }
+            setPWM (PWM_START_RATE_HZ, pwm);
+        }
         vTaskDelay(200);
+
 
     }
 }
