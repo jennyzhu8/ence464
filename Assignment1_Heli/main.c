@@ -17,11 +17,11 @@
 #define BUF_SIZE 10
 
 // PWM configuration
-#define PWM_START_RATE_HZ  250
+#define PWM_START_RATE_HZ  80
 #define PWM_RATE_STEP_HZ   50
 #define PWM_RATE_MIN_HZ    50
 #define PWM_RATE_MAX_HZ    400
-#define PWM_FIXED_DUTY     62.95
+#define PWM_FIXED_DUTY     85
 #define PWM_DIVIDER_CODE   SYSCTL_PWMDIV_4
 #define PWM_DIVIDER        4
 //  PWM Hardware Details M0PWM7 (gen 3)
@@ -157,6 +157,7 @@ initialiseADC (void)
 
 int main(void)
 {
+
     // Set the clock rate to 80 MHz
     SysCtlClockSet (SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN | SYSCTL_XTAL_16MHZ);
 
@@ -166,7 +167,6 @@ int main(void)
     initialiseADC();
 
     PWMOutputState(PWM_MAIN_BASE, PWM_MAIN_OUTBIT, true);
-
 
 
     if (pdTRUE != xTaskCreate(Blink_LED_task, "Blinker Blue", 32, (void *)2, 4, NULL))
@@ -282,18 +282,6 @@ static void ADC_task(void *pvParameters)
         }
 
         UARTprintf("Altitude = %d ",height);
-
-        if (height > (target_height -2) && height < (target_height + 2))
-        {
-            UARTprintf("STOP");
-            setPWM (PWM_START_RATE_HZ, 53);
-        } else {
-            pwm = (target_height - height + 53);
-            if (pwm > 100){
-                pwm = 100;
-            }
-            setPWM (PWM_START_RATE_HZ, pwm);
-        }
         vTaskDelay(200);
 
 

@@ -41037,6 +41037,7 @@ Finished building target: "Assignment1_Heli.out"
  
 
 **** Build Finished ****
+<<<<<<< HEAD
 
 **** Build of configuration Debug for project Assignment1_Heli ****
 
@@ -41349,6 +41350,44 @@ Invoking: Arm Linker
 <Linking>
 Finished building target: "Assignment1_Heli.out"
  
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+=======
+>>>>>>> parent of bb5af1c (ADC)
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/ENCE464/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/ENCE464/Assignment1_Heli/FreeRTOS/include" --include_path="P:/ENCE464/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 234: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 235: warning #179-D: variable "pwm" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
 
 **** Build Finished ****
 
