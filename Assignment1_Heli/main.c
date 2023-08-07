@@ -17,11 +17,11 @@
 #define BUF_SIZE 10
 
 // PWM configuration
-#define PWM_START_RATE_HZ  80
+#define PWM_START_RATE_HZ  250
 #define PWM_RATE_STEP_HZ   50
 #define PWM_RATE_MIN_HZ    50
 #define PWM_RATE_MAX_HZ    400
-#define PWM_FIXED_DUTY     85
+#define PWM_FIXED_DUTY     75
 #define PWM_DIVIDER_CODE   SYSCTL_PWMDIV_4
 #define PWM_DIVIDER        4
 //  PWM Hardware Details M0PWM7 (gen 3)
