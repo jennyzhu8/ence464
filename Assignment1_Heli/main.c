@@ -340,8 +340,8 @@ static void ADC_task(void *pvParameters)
                 alt = alt + alt_buffer[i];
                 count++;
             }
-
         }
+
         alt = alt / count;
         // Values depend on the rig you are using
         // Min Altitude = 2230, Max Altitude = 1000
