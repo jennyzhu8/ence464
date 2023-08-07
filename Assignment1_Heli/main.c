@@ -267,19 +267,16 @@ static void ADC_task(void *pvParameters)
         // Values depend on the rig you are using
         // Min Altitude = 2230, Max Altitude = 1000
         // For emulator to 100%
-        // Min Alt = 3030, Max alt = 1900
+        // Min Alt = 3030, Max alt = 1720
         // Emulator to max which is 133%
         // Min alt =3030, max alt = 1330
         // PWM hover is 53%
 
 
         //getting height between 1660 and 0
-        height = alt-1330;
+        height = alt-1710;
         //getting height as a percentage
-        height =  (133 - ((height*133)/1700));
-        if (height > 134){
-            height = 0;
-        }
+        height =  (100 - ((height*100)/1330));
 
         UARTprintf("Altitude = %d ",height);
         vTaskDelay(200);
