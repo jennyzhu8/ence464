@@ -41709,3 +41709,670 @@ Finished building target: "Assignment1_Heli.out"
  
 
 **** Build Finished ****
+
+**** Clean-only build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 clean -O 
+ 
+DEL /F  "Assignment1_Heli.hex"  "Assignment1_Heli.out" 
+DEL /F "main.obj" "readADC_task.obj" "tm4c123gh6pm_startup_ccs.obj" "FreeRTOS\croutine.obj" "FreeRTOS\event_groups.obj" "FreeRTOS\list.obj" "FreeRTOS\queue.obj" "FreeRTOS\stream_buffer.obj" "FreeRTOS\tasks.obj" "FreeRTOS\timers.obj" "FreeRTOS\portable\CCS\ARM_CM4F\port.obj" "FreeRTOS\portable\CCS\ARM_CM4F\portasm.obj" "FreeRTOS\portable\MemMang\heap_4.obj" "OrbitOLED\OrbitOLEDInterface.obj" "OrbitOLED\lib_OrbitOled\ChrFont0.obj" "OrbitOLED\lib_OrbitOled\FillPat.obj" "OrbitOLED\lib_OrbitOled\OrbitOled.obj" "OrbitOLED\lib_OrbitOled\OrbitOledChar.obj" "OrbitOLED\lib_OrbitOled\OrbitOledGrph.obj" "OrbitOLED\lib_OrbitOled\delay.obj" "drivers\buttons.obj" "drivers\rgb.obj" "utils\uartstdio.obj" 
+DEL /F "main.d" "readADC_task.d" "tm4c123gh6pm_startup_ccs.d" "FreeRTOS\croutine.d" "FreeRTOS\event_groups.d" "FreeRTOS\list.d" "FreeRTOS\queue.d" "FreeRTOS\stream_buffer.d" "FreeRTOS\tasks.d" "FreeRTOS\timers.d" "FreeRTOS\portable\CCS\ARM_CM4F\port.d" "FreeRTOS\portable\MemMang\heap_4.d" "OrbitOLED\OrbitOLEDInterface.d" "OrbitOLED\lib_OrbitOled\ChrFont0.d" "OrbitOLED\lib_OrbitOled\FillPat.d" "OrbitOLED\lib_OrbitOled\OrbitOled.d" "OrbitOLED\lib_OrbitOled\OrbitOledChar.d" "OrbitOLED\lib_OrbitOled\OrbitOledGrph.d" "OrbitOLED\lib_OrbitOled\delay.d" "drivers\buttons.d" "drivers\rgb.d" "utils\uartstdio.d" 
+DEL /F "FreeRTOS\portable\CCS\ARM_CM4F\portasm.d" 
+Could Not Find P:\Real464Project\Group_21\Assignment1_Heli\Debug\FreeRTOS\portable\CCS\ARM_CM4F\portasm.d
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../readADC_task.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="readADC_task.d_raw"  "../readADC_task.c"
+Finished building: "../readADC_task.c"
+ 
+Building file: "../FreeRTOS/croutine.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/croutine.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/croutine.c"
+Finished building: "../FreeRTOS/croutine.c"
+ 
+Building file: "../FreeRTOS/event_groups.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/event_groups.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/event_groups.c"
+Finished building: "../FreeRTOS/event_groups.c"
+ 
+Building file: "../FreeRTOS/list.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/list.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/list.c"
+Finished building: "../FreeRTOS/list.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 268: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 269: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 27: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 28: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 230: warning #179-D: function "Blink_LED_task" was declared but never referenced
+"../main.c", line 414: warning #179-D: function "Button_Task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/port.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+Finished building: "../FreeRTOS/portable/CCS/ARM_CM4F/port.c"
+ 
+Building file: "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/CCS/ARM_CM4F/portasm.d_raw" --obj_directory="FreeRTOS/portable/CCS/ARM_CM4F"  "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+Finished building: "../FreeRTOS/portable/CCS/ARM_CM4F/portasm.asm"
+ 
+Building file: "../FreeRTOS/timers.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/timers.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/timers.c"
+Finished building: "../FreeRTOS/timers.c"
+ 
+Building file: "../FreeRTOS/portable/MemMang/heap_4.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/portable/MemMang/heap_4.d_raw" --obj_directory="FreeRTOS/portable/MemMang"  "../FreeRTOS/portable/MemMang/heap_4.c"
+Finished building: "../FreeRTOS/portable/MemMang/heap_4.c"
+ 
+Building file: "../OrbitOLED/OrbitOLEDInterface.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="OrbitOLED/OrbitOLEDInterface.d_raw" --obj_directory="OrbitOLED"  "../OrbitOLED/OrbitOLEDInterface.c"
+Finished building: "../OrbitOLED/OrbitOLEDInterface.c"
+ 
+Building file: "../FreeRTOS/stream_buffer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/stream_buffer.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/stream_buffer.c"
+Finished building: "../FreeRTOS/stream_buffer.c"
+ 
+Building file: "../FreeRTOS/queue.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/queue.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/queue.c"
+Finished building: "../FreeRTOS/queue.c"
+ 
+Building file: "../OrbitOLED/lib_OrbitOled/ChrFont0.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="OrbitOLED/lib_OrbitOled/ChrFont0.d_raw" --obj_directory="OrbitOLED/lib_OrbitOled"  "../OrbitOLED/lib_OrbitOled/ChrFont0.c"
+Finished building: "../OrbitOLED/lib_OrbitOled/ChrFont0.c"
+ 
+Building file: "../FreeRTOS/tasks.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="FreeRTOS/tasks.d_raw" --obj_directory="FreeRTOS"  "../FreeRTOS/tasks.c"
+Finished building: "../FreeRTOS/tasks.c"
+ 
+Building file: "../OrbitOLED/lib_OrbitOled/FillPat.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="OrbitOLED/lib_OrbitOled/FillPat.d_raw" --obj_directory="OrbitOLED/lib_OrbitOled"  "../OrbitOLED/lib_OrbitOled/FillPat.c"
+Finished building: "../OrbitOLED/lib_OrbitOled/FillPat.c"
+ 
+Building file: "../OrbitOLED/lib_OrbitOled/OrbitOled.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="OrbitOLED/lib_OrbitOled/OrbitOled.d_raw" --obj_directory="OrbitOLED/lib_OrbitOled"  "../OrbitOLED/lib_OrbitOled/OrbitOled.c"
+Finished building: "../OrbitOLED/lib_OrbitOled/OrbitOled.c"
+ 
+Building file: "../OrbitOLED/lib_OrbitOled/OrbitOledChar.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="OrbitOLED/lib_OrbitOled/OrbitOledChar.d_raw" --obj_directory="OrbitOLED/lib_OrbitOled"  "../OrbitOLED/lib_OrbitOled/OrbitOledChar.c"
+Finished building: "../OrbitOLED/lib_OrbitOled/OrbitOledChar.c"
+ 
+Building file: "../OrbitOLED/lib_OrbitOled/delay.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="OrbitOLED/lib_OrbitOled/delay.d_raw" --obj_directory="OrbitOLED/lib_OrbitOled"  "../OrbitOLED/lib_OrbitOled/delay.c"
+Finished building: "../OrbitOLED/lib_OrbitOled/delay.c"
+ 
+Building file: "../drivers/buttons.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="drivers/buttons.d_raw" --obj_directory="drivers"  "../drivers/buttons.c"
+Finished building: "../drivers/buttons.c"
+ 
+Building file: "../OrbitOLED/lib_OrbitOled/OrbitOledGrph.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="OrbitOLED/lib_OrbitOled/OrbitOledGrph.d_raw" --obj_directory="OrbitOLED/lib_OrbitOled"  "../OrbitOLED/lib_OrbitOled/OrbitOledGrph.c"
+Finished building: "../OrbitOLED/lib_OrbitOled/OrbitOledGrph.c"
+ 
+Building file: "../drivers/rgb.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="drivers/rgb.d_raw" --obj_directory="drivers"  "../drivers/rgb.c"
+Finished building: "../drivers/rgb.c"
+ 
+Building file: "../utils/uartstdio.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="utils/uartstdio.d_raw" --obj_directory="utils"  "../utils/uartstdio.c"
+Finished building: "../utils/uartstdio.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 192: error #20: identifier "GPIO_O_LOCK" is undefined
+"../main.c", line 192: error #20: identifier "GPIO_LOCK_KEY" is undefined
+"../main.c", line 193: error #20: identifier "GPIO_O_CR" is undefined
+"../main.c", line 306: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 307: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 27: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 28: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 268: warning #179-D: function "Blink_LED_task" was declared but never referenced
+"../main.c", line 452: warning #179-D: function "Button_Task" was declared but never referenced
+3 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 307: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 308: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 28: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 269: warning #179-D: function "Blink_LED_task" was declared but never referenced
+"../main.c", line 453: warning #179-D: function "Button_Task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 307: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 308: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 28: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 269: warning #179-D: function "Blink_LED_task" was declared but never referenced
+"../main.c", line 453: warning #179-D: function "Button_Task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 307: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 308: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 28: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 269: warning #179-D: function "Blink_LED_task" was declared but never referenced
+"../main.c", line 453: warning #179-D: function "Button_Task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 307: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 308: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 28: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 269: warning #179-D: function "Blink_LED_task" was declared but never referenced
+"../main.c", line 453: warning #179-D: function "Button_Task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 307: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 308: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 28: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 269: warning #179-D: function "Blink_LED_task" was declared but never referenced
+"../main.c", line 453: warning #179-D: function "Button_Task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 307: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 308: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 28: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 269: warning #179-D: function "Blink_LED_task" was declared but never referenced
+"../main.c", line 453: warning #179-D: function "Button_Task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 307: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 308: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 28: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 269: warning #179-D: function "Blink_LED_task" was declared but never referenced
+"../main.c", line 453: warning #179-D: function "Button_Task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 301: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 302: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 28: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 263: warning #179-D: function "Blink_LED_task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 301: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 302: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 28: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 263: warning #179-D: function "Blink_LED_task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 301: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 302: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 28: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 263: warning #179-D: function "Blink_LED_task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 28: error #20: identifier "SemaphoreHandle_t" is undefined
+"../main.c", line 302: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 303: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 30: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 264: warning #179-D: function "Blink_LED_task" was declared but never referenced
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 36: error #20: identifier "SemaphoreHandle_t" is undefined
+"../main.c", line 237: warning #225-D: function "xSemaphoreCreateMutex" declared implicitly
+"../main.c", line 312: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 313: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 28: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 274: warning #179-D: function "Blink_LED_task" was declared but never referenced
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 313: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 314: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 30: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 275: warning #179-D: function "Blink_LED_task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 313: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 314: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 30: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 275: warning #179-D: function "Blink_LED_task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 313: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 314: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 30: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 275: warning #179-D: function "Blink_LED_task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="P:/Real464Project/Group_21/Assignment1_Heli" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/include" --include_path="P:/Real464Project/Group_21/Assignment1_Heli/FreeRTOS/portable/CCS/ARM_CM4F" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 313: warning #179-D: variable "target_height" was declared but never referenced
+"../main.c", line 314: warning #179-D: variable "pwm" was declared but never referenced
+"../main.c", line 29: warning #179-D: variable "g_pui32Colors" was declared but never referenced
+"../main.c", line 30: warning #179-D: variable "g_ui8ColorsIndx" was declared but never referenced
+"../main.c", line 275: warning #179-D: function "Blink_LED_task" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "Assignment1_Heli.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB2 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Assignment1_Heli.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Assignment1_Heli_linkInfo.xml" --rom_model -o "Assignment1_Heli.out" "./main.obj" "./readADC_task.obj" "./tm4c123gh6pm_startup_ccs.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/stream_buffer.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_4.obj" "./OrbitOLED/OrbitOLEDInterface.obj" "./OrbitOLED/lib_OrbitOled/ChrFont0.obj" "./OrbitOLED/lib_OrbitOled/FillPat.obj" "./OrbitOLED/lib_OrbitOled/OrbitOled.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledChar.obj" "./OrbitOLED/lib_OrbitOled/OrbitOledGrph.obj" "./OrbitOLED/lib_OrbitOled/delay.obj" "./drivers/buttons.obj" "./drivers/rgb.obj" "./utils/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "Assignment1_Heli.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Assignment1_Heli ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 16 all -O 
+ 
+gmake[1]: 'Assignment1_Heli.out' is up to date.
+
+**** Build Finished ****
