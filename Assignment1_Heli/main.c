@@ -22,12 +22,14 @@
 #include "semphr.h"
 
 
-#define BUF_SIZE 10
+#define BUF_SIZE 5
 #define LED_ITEM_SIZE           sizeof(uint8_t)
 #define LED_QUEUE_SIZE          5
+#define PWM_ITEM_SIZE           sizeof(uint8_t)
+#define PWM_QUEUE_SIZE          5
 xQueueHandle g_pLEDQueue;
-static uint32_t g_pui32Colors[3] = { 0x0000, 0x0000, 0x0000 };
-static uint8_t g_ui8ColorsIndx;
+xQueueHandle g_pPWMQueue;
+
 
 //*****************************************************************************
 //
@@ -77,6 +79,7 @@ static void Blink_LED_task(void *);
 static void ADC_task(void *);
 static void Button_LED_Task(void *);
 static void ButtonTask(void *);
+static void Get_PWM_Task(void *);
 
 void initialisePWM (void);
 void setPWM (uint32_t u32Freq, uint32_t u32Duty);
@@ -231,6 +234,7 @@ int main(void)
 
     //delete later if an issue : initialising the queue
     g_pLEDQueue = xQueueCreate(LED_QUEUE_SIZE, LED_ITEM_SIZE);
+    g_pPWMQueue = xQueueCreate(PWM_QUEUE_SIZE, PWM_ITEM_SIZE);
 
     //
     // Create a mutex to guard the UART.
@@ -248,7 +252,7 @@ int main(void)
         while(1); // Oh no! Must not have had enough memory to create task.
     }
 
-    if (pdTRUE != xTaskCreate(ADC_task, "ADC Task", 32, (void *)4, 1, NULL))
+    if (pdTRUE != xTaskCreate(ADC_task, "ADC Task", 32, (void *)4, 2, NULL))
     {
          while (1) ; // error creating task, out of memory?
     }
@@ -262,6 +266,10 @@ int main(void)
     {
          while (1) ; // error creating task, out of memory?
     }
+    if (pdTRUE != xTaskCreate(Get_PWM_Task, "Get PWM Task", 128, NULL, 2, NULL))
+        {
+             while (1) ; // error creating task, out of memory?
+        }
 
     vTaskStartScheduler(); // Start FreeRTOS!!
 
@@ -304,15 +312,34 @@ void Blink_LED_task(void *pvParameters) {
 
 static void ADC_task(void *pvParameters)
 {
+    portTickType ui16LastTime;
+    uint32_t ui32SwitchDelay = 25;
     uint16_t i;
     uint32_t ui32Value;
     uint32_t alt_buffer[BUF_SIZE];
     uint8_t index = 0;
     int32_t alt = 0;
     uint32_t height;
-    uint32_t target_height = 80;
     uint32_t pwm;
     uint32_t count;
+    uint8_t message;
+    uint32_t max_voltage;
+    uint32_t min_voltage;
+    uint32_t voltage_difference = 1340;
+
+    ADCProcessorTrigger(ADC0_BASE, 0);
+    //
+    // Wait until the sample sequence has completed.
+    //
+    while(!ADCIntStatus(ADC0_BASE, 0, false))
+    {
+    }
+    //
+    // Read the value from the ADC.
+    //
+    ADCSequenceDataGet(ADC0_BASE, 0, &ui32Value);
+    max_voltage = ui32Value;
+    min_voltage = max_voltage -voltage_difference;
 
 
     while(1)
@@ -341,7 +368,6 @@ static void ADC_task(void *pvParameters)
                 count++;
             }
         }
-
         alt = alt / count;
         // Values depend on the rig you are using
         // Min Altitude = 2230, Max Altitude = 1000
@@ -351,14 +377,25 @@ static void ADC_task(void *pvParameters)
         // Min alt =3030, max alt = 1330
         // PWM hover is 53%
 
-
-        //getting height between 1660 and 0
-        height = alt-1710;
+        //UARTprintf("Raw = %d\n", alt);
+        //getting height between 1710 and 0
+        height = alt-min_voltage;
         //getting height as a percentage
-        height =  (100 - ((height*100)/1330));
+        height =  (100 - ((height*100)/voltage_difference));
+        message = height;
 
-        UARTprintf("Altitude = %d ",height);
-        vTaskDelay(400);
+        if(xQueueSend(g_pLEDQueue, &message, portMAX_DELAY) != pdPASS)
+        {
+            //
+            // Error. The queue should never be full. If so print the
+            // error message on UART and wait for ever.
+            //
+            UARTprintf("\nQueue full. This should never happen.\n");
+            while(1)
+            {
+            }
+        }
+        vTaskDelayUntil(&ui16LastTime, ui32SwitchDelay / portTICK_RATE_MS);
     }
 }
 
@@ -450,7 +487,7 @@ ButtonTask(void *pvParameters)
 
 // For testing the receiving of the button from the queue.
 // Tests both left and right button to turn LED on and off.
-void Button_LED_Task(void *pvParameters)
+static void Button_LED_Task(void *pvParameters)
 {
     const unsigned int whichLed = (unsigned int)pvParameters;
     const uint8_t whichBit = 1 << whichLed;
@@ -480,6 +517,35 @@ void Button_LED_Task(void *pvParameters)
                 vTaskDelay(pdMS_TO_TICKS(125));
             }
         }
+    }
+}
+
+static void Get_PWM_Task(void *pvParameters)
+{
+
+    uint8_t i8Message;
+    portTickType ui16LastTime;
+    uint32_t ui32SwitchDelay = 25;
+    uint8_t target_height = 100;
+    uint8_t height;
+    uint32_t pwm;
+    while(1)
+    {
+        if(xQueueReceive(g_pLEDQueue, &i8Message, pdMS_TO_TICKS(125)) == pdPASS) // ticks to wait must be > 0 so the task doesn't get stuck here
+        {
+            UARTprintf("Altitude = %d\n", i8Message);
+            vTaskDelayUntil(&ui16LastTime, ui32SwitchDelay / portTICK_RATE_MS);
+        }
+        height = i8Message;
+        pwm = 53 + (target_height - height);
+        if (pwm > 80)
+        {
+            pwm = 80;
+        } else if (pwm < 0) {
+            pwm = 0;
+        }
+
+        setPWM (PWM_START_RATE_HZ, pwm);
     }
 }
 
