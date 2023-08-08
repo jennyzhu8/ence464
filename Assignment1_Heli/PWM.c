@@ -5,8 +5,6 @@
  *      Author: bth74
  */
 
-#include <FreeRTOS.h>
-#include <task.h>
 #include <stdint.h>
 #include <stdbool.h>
 #include "inc/hw_memmap.h"
@@ -22,16 +20,10 @@
 #include "driverlib/rom.h"
 #include "driverlib/uart.h"
 #include "drivers/buttons.h"
-#include "queue.h"
-#include "FreeRTOS.h"
-#include "task.h"
-#include "priorities.h"
-#include "semphr.h"
 #include "PWM.h"
 
 
-void
-initialisePWM (void)
+void initialisePWM (void)
 {
     SysCtlPeripheralEnable(PWM_MAIN_PERIPH_PWM);
     SysCtlPeripheralEnable(PWM_MAIN_PERIPH_GPIO);
@@ -54,8 +46,7 @@ initialisePWM (void)
 /********************************************************
  * Function to set the freq, duty cycle of M0PWM7
  ********************************************************/
-void
-setPWM (uint32_t ui32Freq, uint32_t ui32Duty)
+void setPWM (uint32_t ui32Freq, uint32_t ui32Duty)
 {
     // Calculate the PWM period corresponding to the freq.
     uint32_t ui32Period = SysCtlClockGet() / PWM_DIVIDER / ui32Freq;

@@ -23,13 +23,10 @@
 #include "driverlib/uart.h"
 #include "drivers/buttons.h"
 #include "queue.h"
-#include "FreeRTOS.h"
 #include "task.h"
-#include "priorities.h"
 #include "LED.h"
 
-void
-initialiseLED (void)
+void initialiseLED (void)
 {
     // For LED blinky task - initialize GPIO port F and then pin #1 (red) for output
     SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
