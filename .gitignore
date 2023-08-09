@@ -1,4 +1,7 @@
 /Debug
+*.project
+*.cproject
+*.ccsproject
 *.settings
 *.launches
 *.metadata/
