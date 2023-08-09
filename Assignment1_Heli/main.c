@@ -37,21 +37,23 @@
 #define PWM_ITEM_SIZE           sizeof(uint8_t)
 #define PWM_QUEUE_SIZE          5
 
+/* QUEUES
+ * ----------------------------------------------------------------------------------------------------*/
+// Queue for the output to the LED
 xQueueHandle g_pLEDQueue;
+// Queue for the output to the PWM
 xQueueHandle g_pPWMQueue;
 
-//*****************************************************************************
-//
-// The mutex that protects concurrent access of UART from multiple tasks.
-//
-//*****************************************************************************
+/* SEMAPHORES
+ * ----------------------------------------------------------------------------------------------------*/
+// Mutex for protecting against concurrent access of UART from multiple tasks
 xSemaphoreHandle g_pUARTSemaphore;
 
 
-
-
-
+//Function definitions
 static void NullTaskFunc(void *);
+void ConfigureUART(void);
+
 
 void
 ConfigureUART(void)
