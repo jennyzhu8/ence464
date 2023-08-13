@@ -22,7 +22,6 @@
 #include "drivers/buttons.h"
 #include "PWM.h"
 
-
 void initialisePWM (void)
 {
     SysCtlPeripheralEnable(PWM_MAIN_PERIPH_PWM);

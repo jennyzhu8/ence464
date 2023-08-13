@@ -34,13 +34,14 @@
 
 extern xQueueHandle g_pPWMQueue;
 extern xSemaphoreHandle g_pUARTSemaphore;
+extern xQueueHandle g_pTARGETQueue;
 
 void PID_Task(void *pvParameters)
 {
     uint8_t i8Message;
     portTickType ui16LastTime;
     uint32_t ui32SwitchDelay = 25;
-    uint8_t target_height = 50;
+    uint8_t target_height = 80;
     uint8_t height;
     uint32_t pwm;
     uint32_t height_error;
@@ -49,6 +50,26 @@ void PID_Task(void *pvParameters)
     uint32_t proportional;
     while(1)
     {
+        //getting the target height from the buttons
+        if(xQueueReceive(g_pTARGETQueue, &i8Message, pdMS_TO_TICKS(125)) == pdPASS)
+        {
+            if(i8Message == LEFT_BUTTON)
+            {
+                //
+                // Update the target height
+                //
+                target_height = target_height - 10;
+            }
+            if(i8Message == RIGHT_BUTTON)
+            {
+                //
+                // Update the target height
+                //
+                target_height = target_height + 10;
+
+            }
+        }
+
         if(xQueueReceive(g_pPWMQueue, &i8Message, pdMS_TO_TICKS(125)) == pdPASS) // ticks to wait must be > 0 so the task doesn't get stuck here
         {
             xSemaphoreTake(g_pUARTSemaphore, portMAX_DELAY);

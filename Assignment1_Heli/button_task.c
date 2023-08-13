@@ -26,6 +26,7 @@
 #include "button_task.h"
 
 extern xQueueHandle g_pLEDQueue;
+extern xQueueHandle g_pTARGETQueue;
 extern xSemaphoreHandle g_pUARTSemaphore;
 
 // Initialises the buttons for use
@@ -103,6 +104,19 @@ void ButtonTask(void *pvParameters)
                     xSemaphoreGive(g_pUARTSemaphore);
                 }
 
+                 //pass the value of the button pressed to the PID_task
+                if(xQueueSend(g_pTARGETQueue, &ui8Message, portMAX_DELAY) !=
+                   pdPASS)
+                {
+                    //
+                    // Error. The queue should never be full. If so print the
+                    // error message on UART and wait for ever.
+                    //
+                    UARTprintf("\nQueue full. This should never happen.\n");
+                    while(1)
+                    {
+                    }
+                }
                 //
                 // Pass the value of the button pressed to Button_LED_Task.
                 //
@@ -118,6 +132,7 @@ void ButtonTask(void *pvParameters)
                     {
                     }
                 }
+
             }
         }
 
