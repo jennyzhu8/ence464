@@ -34,8 +34,8 @@
 #define BUF_SIZE 5
 #define LED_ITEM_SIZE           sizeof(uint8_t)
 #define LED_QUEUE_SIZE          5
-#define PWM_ITEM_SIZE           sizeof(uint8_t)
-#define PWM_QUEUE_SIZE          5
+#define ALT_ITEM_SIZE           sizeof(uint8_t)
+#define ALT_QUEUE_SIZE          5
 #define TARGET_ITEM_SIZE        sizeof(uint8_t)
 #define TARGET_QUEUE_SIZE       5
 
@@ -44,7 +44,7 @@
 // Queue for the output to the LED
 xQueueHandle g_pLEDQueue;
 // Queue for the output to the PWM
-xQueueHandle g_pPWMQueue;
+xQueueHandle g_pALTQueue;
 
 //Queue for the buttons to change the target height
 xQueueHandle g_pTARGETQueue;
@@ -98,15 +98,17 @@ int main(void)
 
     ConfigureUART();
     initialisePWM();
+    control_init();
     initialiseLED();
     initialiseADC();
     initialiseButtons();
+
 
     PWMOutputState(PWM_MAIN_BASE, PWM_MAIN_OUTBIT, true);
 
     //delete later if an issue : initialising the queue
     g_pLEDQueue = xQueueCreate(LED_QUEUE_SIZE, LED_ITEM_SIZE);
-    g_pPWMQueue = xQueueCreate(PWM_QUEUE_SIZE, PWM_ITEM_SIZE);
+    g_pALTQueue = xQueueCreate(ALT_QUEUE_SIZE, ALT_ITEM_SIZE);
     g_pTARGETQueue = xQueueCreate(TARGET_QUEUE_SIZE, TARGET_ITEM_SIZE);
 
     //

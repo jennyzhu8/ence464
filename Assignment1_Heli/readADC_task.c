@@ -33,7 +33,7 @@
 // This task reads the ADC inputs from the pins for height/yaw
 //
 //*****************************************************************************
-extern xQueueHandle g_pPWMQueue;
+extern xQueueHandle g_pALTQueue;
 
 void initialiseADC (void)
 {
@@ -67,10 +67,10 @@ void altitude_ADC_task(void *pvParameters)
     int32_t alt = 0;
     uint32_t height;
     uint32_t count;
-    uint8_t message;
+    uint8_t ui8message;
     uint32_t max_voltage;
     uint32_t min_voltage;
-    uint32_t voltage_difference = 1345;
+    uint32_t voltage_difference = 1348;
 
     ADCProcessorTrigger(ADC0_BASE, 0);
     //
@@ -119,9 +119,9 @@ void altitude_ADC_task(void *pvParameters)
         height = alt-min_voltage;
         //getting height as a percentage
         height =  (100 - ((height*100)/voltage_difference));
-        message = height;
+        ui8message = height;
 
-        if(xQueueSend(g_pPWMQueue, &message, portMAX_DELAY) != pdPASS)
+        if(xQueueSend(g_pALTQueue, &ui8message, portMAX_DELAY) != pdPASS)
         {
             // Error. The queue should never be full. If so print the
             // error message on UART and wait for ever.
