@@ -103,7 +103,6 @@ int main(void)
     initialiseADC();
     initialiseButtons();
 
-
     PWMOutputState(PWM_MAIN_BASE, PWM_MAIN_OUTBIT, true);
 
     //delete later if an issue : initialising the queue

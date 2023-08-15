@@ -29,6 +29,7 @@
 #include "semphr.h"
 #include "PID_task.h"
 #include "PWM.h"
+#include "button_task.h"
 
 #define CONTROL_DT (1.f/50.f)
 
@@ -41,6 +42,7 @@ extern xQueueHandle g_pTARGETQueue;
 
 void PID_Task(void *pvParameters)
 {
+    uint8_t button;
     uint8_t i8Message;
     portTickType ui16LastTime;
     uint32_t ui32SwitchDelay = 25;
@@ -51,16 +53,16 @@ void PID_Task(void *pvParameters)
     while(1)
     {
         //getting the target height from the buttons
-        if(xQueueReceive(g_pTARGETQueue, &i8Message, pdMS_TO_TICKS(125)) == pdPASS)
+        if(xQueueReceive(g_pTARGETQueue, &button, pdMS_TO_TICKS(125)) == pdPASS)
         {
-            if(i8Message == LEFT_BUTTON)
+            if(button == DOWN)
             {
                 //
                 // Update the target height
                 //
                 target_height = target_height - 10;
             }
-            if(i8Message == RIGHT_BUTTON)
+            if(button == UP)
             {
                 //
                 // Update the target height

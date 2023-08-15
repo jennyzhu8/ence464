@@ -24,125 +24,187 @@
 #include "queue.h"
 #include "semphr.h"
 #include "button_task.h"
+#include "inc/tm4c123gh6pm.h"
 
+
+// *******************************************************
+// Globals to main program
+// *******************************************************
 extern xQueueHandle g_pLEDQueue;
 extern xQueueHandle g_pTARGETQueue;
 extern xSemaphoreHandle g_pUARTSemaphore;
 
-// Initialises the buttons for use
-void initialiseButtons(void)
+
+// *******************************************************
+// Globals to module
+// *******************************************************
+static bool but_state[NUM_BUTS];    // Corresponds to the electrical state
+static uint8_t but_count[NUM_BUTS];
+static bool but_flag[NUM_BUTS];
+static bool but_normal[NUM_BUTS];   // Corresponds to the electrical state
+
+
+// *******************************************************
+// initButtons: Initialise the variables associated with the set of buttons
+// defined by the constants in the buttons2.h header file.
+
+void
+initialiseButtons (void)
 {
-    //
-    // Unlock the GPIO LOCK register for Right button to work.
-    //
-    HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = GPIO_LOCK_KEY;
-    HWREG(GPIO_PORTF_BASE + GPIO_O_CR) = 0xFF;
+    int i;
 
-//    // UP button (active HIGH)
-//    SysCtlPeripheralEnable (UP_BUT_PERIPH);
-//    GPIOPinTypeGPIOInput (UP_BUT_PORT_BASE, UP_BUT_PIN);
-//    GPIOPadConfigSet (UP_BUT_PORT_BASE, UP_BUT_PIN, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPD);
-//    but_normal[UP] = UP_BUT_NORMAL;
-//    // DOWN button (active HIGH)
-//    SysCtlPeripheralEnable (DOWN_BUT_PERIPH);
-//    GPIOPinTypeGPIOInput (DOWN_BUT_PORT_BASE, DOWN_BUT_PIN);
-//    GPIOPadConfigSet (DOWN_BUT_PORT_BASE, DOWN_BUT_PIN, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPD);
+    // UP button (active HIGH)
+    SysCtlPeripheralEnable (UP_BUT_PERIPH);
+    GPIOPinTypeGPIOInput (UP_BUT_PORT_BASE, UP_BUT_PIN);
+    GPIOPadConfigSet (UP_BUT_PORT_BASE, UP_BUT_PIN, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPD);
+    but_normal[UP] = UP_BUT_NORMAL;
+    // DOWN button (active HIGH)
+    SysCtlPeripheralEnable (DOWN_BUT_PERIPH);
+    GPIOPinTypeGPIOInput (DOWN_BUT_PORT_BASE, DOWN_BUT_PIN);
+    GPIOPadConfigSet (DOWN_BUT_PORT_BASE, DOWN_BUT_PIN, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPD);
+    but_normal[DOWN] = DOWN_BUT_NORMAL;
+    // LEFT button (active LOW)
+    SysCtlPeripheralEnable (LEFT_BUT_PERIPH);
+    GPIOPinTypeGPIOInput (LEFT_BUT_PORT_BASE, LEFT_BUT_PIN);
+    GPIOPadConfigSet (LEFT_BUT_PORT_BASE, LEFT_BUT_PIN, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
+    but_normal[LEFT] = LEFT_BUT_NORMAL;
+    // RIGHT button (active LOW)
+      // Note that PF0 is one of a handful of GPIO pins that need to be
+      // "unlocked" before they can be reconfigured.  This also requires
+      //      #include "inc/tm4c123gh6pm.h"
+    SysCtlPeripheralEnable (RIGHT_BUT_PERIPH);
+    //---Unlock PF0 for the right button:
+    GPIO_PORTF_LOCK_R = GPIO_LOCK_KEY;
+    GPIO_PORTF_CR_R |= GPIO_PIN_0; //PF0 unlocked
+    GPIO_PORTF_LOCK_R = GPIO_LOCK_M;
+    GPIOPinTypeGPIOInput (RIGHT_BUT_PORT_BASE, RIGHT_BUT_PIN);
+    GPIOPadConfigSet (RIGHT_BUT_PORT_BASE, RIGHT_BUT_PIN, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
+    but_normal[RIGHT] = RIGHT_BUT_NORMAL;
 
-    // Initialize the buttons
-    //
-    ButtonsInit();
+    for (i = 0; i < NUM_BUTS; i++)
+    {
+        but_state[i] = but_normal[i];
+        but_count[i] = 0;
+        but_flag[i] = false;
+    }
+}
+
+// *******************************************************
+// updateButtons: Function designed to be called regularly. It polls all
+// buttons once and updates variables associated with the buttons if
+// necessary.  It is efficient enough to be part of an ISR, e.g. from
+// a SysTick interrupt.
+// Debounce algorithm: A state machine is associated with each button.
+// A state change occurs only after NUM_BUT_POLLS consecutive polls have
+// read the pin in the opposite condition, before the state changes and
+// a flag is set.  Set NUM_BUT_POLLS according to the polling rate.
+void
+updateButtons (void)
+{
+    bool but_value[NUM_BUTS];
+    int i;
+
+    // Read the pins; true means HIGH, false means LOW
+    but_value[UP] = (GPIOPinRead (UP_BUT_PORT_BASE, UP_BUT_PIN) == UP_BUT_PIN);
+    but_value[DOWN] = (GPIOPinRead (DOWN_BUT_PORT_BASE, DOWN_BUT_PIN) == DOWN_BUT_PIN);
+    but_value[LEFT] = (GPIOPinRead (LEFT_BUT_PORT_BASE, LEFT_BUT_PIN) == LEFT_BUT_PIN);
+    but_value[RIGHT] = (GPIOPinRead (RIGHT_BUT_PORT_BASE, RIGHT_BUT_PIN) == RIGHT_BUT_PIN);
+    // Iterate through the buttons, updating button variables as required
+    for (i = 0; i < NUM_BUTS; i++)
+    {
+        if (but_value[i] != but_state[i])
+        {
+            but_count[i]++;
+            if (but_count[i] >= NUM_BUT_POLLS)
+            {
+                but_state[i] = but_value[i];
+                but_flag[i] = true;    // Reset by call to checkButton()
+                but_count[i] = 0;
+            }
+        }
+        else
+            but_count[i] = 0;
+    }
+}
+
+// *******************************************************
+// checkButton: Function returns the new button logical state if the button
+// logical state (PUSHED or RELEASED) has changed since the last call,
+// otherwise returns NO_CHANGE.
+uint8_t
+checkButton (uint8_t butName)
+{
+    if (but_flag[butName])
+    {
+        but_flag[butName] = false;
+        if (but_state[butName] == but_normal[butName])
+            return RELEASED;
+        else
+            return PUSHED;
+    }
+    return NO_CHANGE;
 }
 
 
+// *******************************************************
 // Button polling task, sends button info to queue if button pressed
 void ButtonTask(void *pvParameters)
 {
-    portTickType ui16LastTime;
-    uint32_t ui32SwitchDelay = 25;
-    uint8_t ui8CurButtonState, ui8PrevButtonState;
-    uint8_t ui8Message;
-
-    ui8CurButtonState = ui8PrevButtonState = 0;
-
-    //
-    // Get the current tick count.
-    //
-    ui16LastTime = xTaskGetTickCount();
+    uint8_t Button;
 
     while(1)
     {
         //
-        // Poll the debounced state of the buttons.
+        // Poll the debounced state of all buttons.
         //
-        ui8CurButtonState = ButtonsPoll(0, 0);
+        updateButtons();
 
-        //
-        // Check if previous debounced state is equal to the current state.
-        //
-        if(ui8CurButtonState != ui8PrevButtonState)
+        for(Button = UP; Button < NUM_BUTS; Button++)
         {
-            ui8PrevButtonState = ui8CurButtonState;
-
-            //
-            // Check to make sure the change in state is due to button press
-            // and not due to button release.
-            //
-            if((ui8CurButtonState & ALL_BUTTONS) != 0)
+            if(checkButton(Button) == PUSHED)
             {
-                if((ui8CurButtonState & ALL_BUTTONS) == LEFT_BUTTON)
-                {
-                    ui8Message = LEFT_BUTTON;
-                    xSemaphoreTake(g_pUARTSemaphore, portMAX_DELAY);
-                    UARTprintf("Left Button is pressed.\n");
-                    xSemaphoreGive(g_pUARTSemaphore);
-                }
-                else if((ui8CurButtonState & ALL_BUTTONS) == RIGHT_BUTTON)
-                {
-                    ui8Message = RIGHT_BUTTON;
-                    xSemaphoreTake(g_pUARTSemaphore, portMAX_DELAY);
-                    UARTprintf("Right Button is pressed.\n");
-                    xSemaphoreGive(g_pUARTSemaphore);
-                }
 
-                 //pass the value of the button pressed to the PID_task
-                if(xQueueSend(g_pTARGETQueue, &ui8Message, portMAX_DELAY) !=
-                   pdPASS)
+
+                //prints when a button is pressed
+                xSemaphoreTake(g_pUARTSemaphore, portMAX_DELAY);
+                UARTprintf("Button pressed: %d\n", Button);
+                xSemaphoreGive(g_pUARTSemaphore);
+
+                if(Button == UP || Button == DOWN)
                 {
-                    //
-                    // Error. The queue should never be full. If so print the
-                    // error message on UART and wait for ever.
-                    //
-                    UARTprintf("\nQueue full. This should never happen.\n");
-                    while(1)
+                   //pass the value of the button pressed to the PID_task
+                   if(xQueueSend(g_pTARGETQueue, &Button, portMAX_DELAY) != pdPASS)
+                   {
+                       // Error. The queue should never be full. If so print the
+                       // error message on UART and wait for ever.
+                       UARTprintf("\nQueue full. This should never happen.\n");
+                       while(1)
+                       {
+                       }
+                   }
+                } else if(Button == LEFT || Button == RIGHT)
+                {
+                    // Pass the value of the button pressed to Button_LED_Task.
+                    if(xQueueSend(g_pLEDQueue, &Button, portMAX_DELAY) != pdPASS)
                     {
+                        //
+                        // Error. The queue should never be full. If so print the
+                        // error message on UART and wait for ever.
+                        //
+                        UARTprintf("\nQueue full. This should never happen.\n");
+                        while(1)
+                        {
+                        }
                     }
                 }
-                //
-                // Pass the value of the button pressed to Button_LED_Task.
-                //
-                if(xQueueSend(g_pLEDQueue, &ui8Message, portMAX_DELAY) !=
-                   pdPASS)
-                {
-                    //
-                    // Error. The queue should never be full. If so print the
-                    // error message on UART and wait for ever.
-                    //
-                    UARTprintf("\nQueue full. This should never happen.\n");
-                    while(1)
-                    {
-                    }
-                }
-
             }
         }
-
-        //
-        // Wait for the required amount of time to check back.
-        //
-        vTaskDelayUntil(&ui16LastTime, ui32SwitchDelay / portTICK_RATE_MS);
+        //end while(1) loop
     }
 }
 
+// LEGACY CODE
+// *******************************************************
 // For testing the receiving of the button from the queue.
 // Tests both left and right button to turn LED on and of
 void Button_LED_Task(void *pvParameters)
@@ -150,13 +212,13 @@ void Button_LED_Task(void *pvParameters)
     const unsigned int whichLed = (unsigned int)pvParameters;
     const uint8_t whichBit = 1 << whichLed;
     uint8_t currentValue = 0;
-    uint8_t i8Message;
+    uint8_t Button;
 
     while(1)
     {
-        if(xQueueReceive(g_pLEDQueue, &i8Message, pdMS_TO_TICKS(125)) == pdPASS) // ticks to wait must be > 0 so the task doesn't get stuck here
+        if(xQueueReceive(g_pLEDQueue, &Button, pdMS_TO_TICKS(125)) == pdPASS) // ticks to wait must be > 0 so the task doesn't get stuck here
         {
-            if(i8Message == LEFT_BUTTON)
+            if(Button == LEFT)
             {
                 //
                 // Update the LED to turn on.
@@ -165,7 +227,7 @@ void Button_LED_Task(void *pvParameters)
                 GPIOPinWrite(GPIO_PORTF_BASE, whichBit, currentValue);
                 vTaskDelay(pdMS_TO_TICKS(125));
             }
-            if(i8Message == RIGHT_BUTTON)
+            if(Button == RIGHT)
             {
                 //
                 // Update the LED to turn off.
