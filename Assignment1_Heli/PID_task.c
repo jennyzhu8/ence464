@@ -36,63 +36,65 @@
 PID main_rotor;
 //PID tail;
 
-extern xQueueHandle g_pALTQueue;
 extern xSemaphoreHandle g_pUARTSemaphore;
+extern xQueueHandle g_pALTQueue;
 extern xQueueHandle g_pTARGETQueue;
-extern xSemaphoreHandle g_pHEIGHTSemaphore;
-extern xSemaphoreHandle g_pYAWSemaphore;
+
 
 void PID_Task(void *pvParameters)
 {
     uint8_t button;
-    uint8_t i8Message;
     portTickType ui16LastTime;
     uint32_t ui32SwitchDelay = 25;
-    uint8_t target_height = 50;
+    int8_t target_height = 50;
     uint8_t height;
-    uint32_t pwm;
     int16_t height_error;
+
     while(1)
     {
         //getting the target height from the buttons
-        xSemaphoreTake(g_pHEIGHTSemaphore, portMAX_DELAY);
         if(xQueueReceive(g_pTARGETQueue, &button, pdMS_TO_TICKS(125)) == pdPASS)
         {
             if(button == DOWN)
             {
-                //
                 // Update the target height
-                //
-                target_height = target_height - 10;
+                target_height = target_height - STEP_SIZE_HEIGHT;
+                if (target_height < 0) {
+                    target_height = 0;
+                }
             }
             if(button == UP)
             {
-                //
                 // Update the target height
-                //
-                target_height = target_height + 10;
-
+                target_height = target_height + STEP_SIZE_HEIGHT;
+                if (target_height > 100) {
+                    target_height = 100;
+                }
             }
         }
-        xSemaphoreGive(g_pHEIGHTSemaphore);
 
-        if(xQueueReceive(g_pALTQueue, &i8Message, pdMS_TO_TICKS(125)) == pdPASS) // ticks to wait must be > 0 so the task doesn't get stuck here
+        //prints the Target height
+        xSemaphoreTake(g_pUARTSemaphore, portMAX_DELAY);
+        UARTprintf("Target = %d     ", target_height);
+        xSemaphoreGive(g_pUARTSemaphore);
+
+        if(xQueueReceive(g_pALTQueue, &height, pdMS_TO_TICKS(125)) == pdPASS) // ticks to wait must be > 0 so the task doesn't get stuck here
         {
+            //prints the Current Altitude
             xSemaphoreTake(g_pUARTSemaphore, portMAX_DELAY);
-            UARTprintf("Altitude = %d\n", i8Message);
+            UARTprintf("Altitude = %d    ", height);
             xSemaphoreGive(g_pUARTSemaphore);
+
             vTaskDelayUntil(&ui16LastTime, ui32SwitchDelay / portTICK_RATE_MS);
-            height = i8Message;
+
+            //sets and inputs the height error
             height_error = target_height - height;
             control_update(height_error, 0);
-            /**
-            pwm = 53 + height_error;
-            if (pwm > 80)
-            {
-                pwm = 80;
-            }
-            setPWM (PWM_START_RATE_HZ, pwm);
-            */
+
+            //prints the Current Height Error
+            xSemaphoreTake(g_pUARTSemaphore, portMAX_DELAY);
+            UARTprintf("Error = %d    ", height_error);
+            xSemaphoreGive(g_pUARTSemaphore);
         }
 
     }
@@ -142,23 +144,25 @@ void control_init(void) {
 }
 
 void control_update(int16_t alt_error, int16_t yaw_error) {
-    int8_t pwm;
-    int8_t raw;
+    int16_t pwm;
+    int16_t raw;
 
     pid_update(&main_rotor, alt_error, CONTROL_DT);
-    pwm = 53 + (int)pid_get_command(&main_rotor);
-    if (pwm > 70) {
-        pwm = 70;
-    } else if (pwm < 0) {
-        pwm = 20;
+
+    pwm = PWM_MID_VALUE + (int)pid_get_command(&main_rotor);
+
+    if (pwm > PWM_MAX) {
+        pwm = PWM_MAX;
+    } else if (pwm < PWM_MIN) {
+        pwm = PWM_MIN;
     }
     // printing out raw PID control value
-    /**
+
     raw = pid_get_command(&main_rotor);
     xSemaphoreTake(g_pUARTSemaphore, portMAX_DELAY);
     UARTprintf("PWM = %d\n", raw);
     xSemaphoreGive(g_pUARTSemaphore);
-    */
+
     //pid_update(&tail, yaw_error, CONTROL_DT);
     setPWM (PWM_START_RATE_HZ, pwm);
 }

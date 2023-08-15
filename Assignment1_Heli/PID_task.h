@@ -1,18 +1,23 @@
+
 /*
  * PID_task.h
  *
  *  Created on: 9/08/2023
  *      Author: bth74
  */
-
-// PWM configuration
-#define PWM_START_RATE_HZ  250
-
 #ifndef PID_TASK_H_
 #define PID_TASK_H_
 
-typedef struct PID PID;
+// Stepping size for button controls
+#define STEP_SIZE_HEIGHT 25
 
+// PWM configuration
+#define PWM_START_RATE_HZ  250
+#define PWM_MID_VALUE 53
+#define PWM_MAX 73
+#define PWM_MIN 23
+
+typedef struct PID PID;
 
 
 void PID_Task(void *pvParameters);

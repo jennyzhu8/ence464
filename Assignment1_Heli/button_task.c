@@ -19,7 +19,6 @@
 #include "utils/uartstdio.h"
 #include "driverlib/rom.h"
 #include "driverlib/uart.h"
-#include "drivers/buttons.h"
 #include "FreeRTOS.h"
 #include "queue.h"
 #include "semphr.h"
@@ -33,8 +32,6 @@
 extern xQueueHandle g_pLEDQueue;
 extern xQueueHandle g_pTARGETQueue;
 extern xSemaphoreHandle g_pUARTSemaphore;
-extern xSemaphoreHandle g_pHEIGHTSemaphore;
-extern xSemaphoreHandle g_pYAWSemaphore;
 
 
 // *******************************************************
@@ -175,7 +172,7 @@ void ButtonTask(void *pvParameters)
                 if(Button == UP || Button == DOWN)
                 {
                    //pass the value of the button pressed to the PID_task
-                   xSemaphoreTake(g_pHEIGHTSemaphore, portMAX_DELAY);
+
                    if(xQueueSend(g_pTARGETQueue, &Button, portMAX_DELAY) != pdPASS)
                    {
                        // Error. The queue should never be full. If so print the
@@ -185,12 +182,12 @@ void ButtonTask(void *pvParameters)
                        {
                        }
                    }
-                   xSemaphoreGive(g_pHEIGHTSemaphore);
+
                 }
 
                 if(Button == LEFT || Button == RIGHT)
                 {
-                    xSemaphoreTake(g_pYAWSemaphore, portMAX_DELAY);
+
                     // Pass the value of the button pressed to Button_LED_Task.
                     if(xQueueSend(g_pLEDQueue, &Button, portMAX_DELAY) != pdPASS)
                     {
@@ -203,51 +200,11 @@ void ButtonTask(void *pvParameters)
                         {
                         }
                     }
-                    xSemaphoreGive(g_pYAWSemaphore);
+
                 }
             }
         }
         //end while(1) loop
     }
 }
-
-// LEGACY CODE
-// *******************************************************
-// For testing the receiving of the button from the queue.
-// Tests both left and right button to turn LED on and of
-void Button_LED_Task(void *pvParameters)
-{
-    const unsigned int whichLed = (unsigned int)pvParameters;
-    const uint8_t whichBit = 1 << whichLed;
-    uint8_t currentValue = 0;
-    uint8_t Button;
-
-    while(1)
-    {
-        xSemaphoreTake(g_pYAWSemaphore, portMAX_DELAY);
-        if(xQueueReceive(g_pLEDQueue, &Button, pdMS_TO_TICKS(125)) == pdPASS) // ticks to wait must be > 0 so the task doesn't get stuck here
-        {
-            if(Button == LEFT)
-            {
-                //
-                // Update the LED to turn on.
-                //
-                currentValue = whichBit;
-                GPIOPinWrite(GPIO_PORTF_BASE, whichBit, currentValue);
-                vTaskDelay(pdMS_TO_TICKS(125));
-            }
-            if(Button == RIGHT)
-            {
-                //
-                // Update the LED to turn off.
-                //
-                currentValue = 0;
-                GPIOPinWrite(GPIO_PORTF_BASE, whichBit, currentValue);
-                vTaskDelay(pdMS_TO_TICKS(125));
-            }
-        }
-        xSemaphoreGive(g_pYAWSemaphore);
-    }
-}
-
 
