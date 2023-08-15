@@ -53,6 +53,8 @@ xQueueHandle g_pTARGETQueue;
  * ----------------------------------------------------------------------------------------------------*/
 // Mutex for protecting against concurrent access of UART from multiple tasks
 xSemaphoreHandle g_pUARTSemaphore;
+xSemaphoreHandle g_pHEIGHTSemaphore;
+xSemaphoreHandle g_pYAWSemaphore;
 
 
 //Function definitions
@@ -111,9 +113,11 @@ int main(void)
     g_pTARGETQueue = xQueueCreate(TARGET_QUEUE_SIZE, TARGET_ITEM_SIZE);
 
     //
-    // Create a mutex to guard the UART.
+    // Create a mutex to guard the UART, Height and Yaw.
     //
     g_pUARTSemaphore = xSemaphoreCreateMutex();
+    g_pHEIGHTSemaphore = xSemaphoreCreateMutex();
+    g_pYAWSemaphore = xSemaphoreCreateMutex();
 
 
 //    if (pdTRUE != xTaskCreate(Blink_LED_task, "Blinker Blue", 32, (void *)2, 4, NULL))

@@ -39,6 +39,8 @@ PID main_rotor;
 extern xQueueHandle g_pALTQueue;
 extern xSemaphoreHandle g_pUARTSemaphore;
 extern xQueueHandle g_pTARGETQueue;
+extern xSemaphoreHandle g_pHEIGHTSemaphore;
+extern xSemaphoreHandle g_pYAWSemaphore;
 
 void PID_Task(void *pvParameters)
 {
@@ -53,6 +55,7 @@ void PID_Task(void *pvParameters)
     while(1)
     {
         //getting the target height from the buttons
+        xSemaphoreTake(g_pHEIGHTSemaphore, portMAX_DELAY);
         if(xQueueReceive(g_pTARGETQueue, &button, pdMS_TO_TICKS(125)) == pdPASS)
         {
             if(button == DOWN)
@@ -71,6 +74,7 @@ void PID_Task(void *pvParameters)
 
             }
         }
+        xSemaphoreGive(g_pHEIGHTSemaphore);
 
         if(xQueueReceive(g_pALTQueue, &i8Message, pdMS_TO_TICKS(125)) == pdPASS) // ticks to wait must be > 0 so the task doesn't get stuck here
         {

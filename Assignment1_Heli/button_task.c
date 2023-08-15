@@ -33,6 +33,8 @@
 extern xQueueHandle g_pLEDQueue;
 extern xQueueHandle g_pTARGETQueue;
 extern xSemaphoreHandle g_pUARTSemaphore;
+extern xSemaphoreHandle g_pHEIGHTSemaphore;
+extern xSemaphoreHandle g_pYAWSemaphore;
 
 
 // *******************************************************
@@ -173,6 +175,7 @@ void ButtonTask(void *pvParameters)
                 if(Button == UP || Button == DOWN)
                 {
                    //pass the value of the button pressed to the PID_task
+                   xSemaphoreTake(g_pHEIGHTSemaphore, portMAX_DELAY);
                    if(xQueueSend(g_pTARGETQueue, &Button, portMAX_DELAY) != pdPASS)
                    {
                        // Error. The queue should never be full. If so print the
@@ -182,8 +185,12 @@ void ButtonTask(void *pvParameters)
                        {
                        }
                    }
-                } else if(Button == LEFT || Button == RIGHT)
+                   xSemaphoreGive(g_pHEIGHTSemaphore);
+                }
+
+                if(Button == LEFT || Button == RIGHT)
                 {
+                    xSemaphoreTake(g_pYAWSemaphore, portMAX_DELAY);
                     // Pass the value of the button pressed to Button_LED_Task.
                     if(xQueueSend(g_pLEDQueue, &Button, portMAX_DELAY) != pdPASS)
                     {
@@ -196,6 +203,7 @@ void ButtonTask(void *pvParameters)
                         {
                         }
                     }
+                    xSemaphoreGive(g_pYAWSemaphore);
                 }
             }
         }
@@ -216,6 +224,7 @@ void Button_LED_Task(void *pvParameters)
 
     while(1)
     {
+        xSemaphoreTake(g_pYAWSemaphore, portMAX_DELAY);
         if(xQueueReceive(g_pLEDQueue, &Button, pdMS_TO_TICKS(125)) == pdPASS) // ticks to wait must be > 0 so the task doesn't get stuck here
         {
             if(Button == LEFT)
@@ -237,6 +246,7 @@ void Button_LED_Task(void *pvParameters)
                 vTaskDelay(pdMS_TO_TICKS(125));
             }
         }
+        xSemaphoreGive(g_pYAWSemaphore);
     }
 }
 
