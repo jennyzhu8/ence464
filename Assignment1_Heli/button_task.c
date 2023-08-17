@@ -147,7 +147,7 @@ checkButton (uint8_t butName)
 
 // *******************************************************
 // Button polling task, sends button info to queue if button pressed
-void ButtonTask(void *pvParameters)
+void Button_Task(void *pvParameters)
 {
     uint8_t Button;
 

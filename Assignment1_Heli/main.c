@@ -28,7 +28,7 @@
 #include "LED.h"
 #include "readADC_task.h"
 #include "button_task.h"
-#include "PID_task.h"
+#include "control_task.h"
 
 
 #define BUF_SIZE 5
@@ -87,7 +87,7 @@ int main(void)
     // Initilisation of task drivers
     ConfigureUART();
     initialisePWM();
-    control_init();
+    initialiseControl();
     initialiseLED();//DELETE
     initialiseADC();
     initialiseButtons();
@@ -100,7 +100,7 @@ int main(void)
     g_pALTQueue = xQueueCreate(ALT_QUEUE_SIZE, ALT_ITEM_SIZE);
     g_pTARGETQueue = xQueueCreate(TARGET_QUEUE_SIZE, TARGET_ITEM_SIZE);
 
-    // Create a mutex to guard the UART, Height and Yaw.
+    // Create a mutex to guard the UART
     g_pUARTSemaphore = xSemaphoreCreateMutex();
 
     // Creates FreeRTOS Tasks
@@ -114,12 +114,12 @@ int main(void)
          while (1) ; // error creating task, out of memory?
     }
 
-    if (pdTRUE != xTaskCreate(ButtonTask, (const portCHAR *)"Button Task", 128, NULL, 1, NULL))
+    if (pdTRUE != xTaskCreate(Button_Task, (const portCHAR *)"Button Task", 128, NULL, 1, NULL))
     {
          while (1) ; // error creating task, out of memory?
     }
 
-    if (pdTRUE != xTaskCreate(PID_Task, "Get PWM Task", 128, NULL, 2, NULL))
+    if (pdTRUE != xTaskCreate(Control_Task, "Setting Control Task", 128, NULL, 2, NULL))
     {
          while (1) ; // error creating task, out of memory?
     }

@@ -65,7 +65,7 @@ checkButton (uint8_t butName);
 
 // *******************************************************
 // FreeRTOS Tasks
-void ButtonTask(void *pvParameters);
+void Button_Task(void *pvParameters);
 
 
 
