@@ -9,10 +9,13 @@
 #include <stdbool.h>
 #include "PID_controller.h"
 
-#define CONTROL_DT (1.f/50.f)
 
-// Initialises the PID controller
-void pid_init(PID* pid, uint8_t kp, uint8_t ki, uint8_t kd, int16_t accum_limit) {
+// **************************************************************
+// pid_init: Initialises a PID struct based on the input gains and the accumulator limit
+//  (Initial Setter)
+void
+pid_init(PID* pid, uint8_t kp, uint8_t ki, uint8_t kd, int16_t accum_limit, int16_t max_output)
+{
     pid->kp = kp;
     pid->ki = ki;
     pid->kd = kd;
@@ -20,16 +23,21 @@ void pid_init(PID* pid, uint8_t kp, uint8_t ki, uint8_t kd, int16_t accum_limit)
     pid->error = 0;
     pid->derivative = 0;
     pid->limit = accum_limit;
-
+    pid->max_output = max_output;
 }
 
-void pid_update(PID* pid, int16_t error, int16_t dt) {
+// **************************************************************
+// pid_update: Updates a PID object based on the input error and change in time from the last call
+//  (Setter)
+void
+pid_update(PID* pid, int16_t error, int16_t dt)
+{
     // Add the error to the integral
     pid->accumulator += error*dt;
 
     // Clamp the accumulator to the specified limit
     if (pid->accumulator > pid->limit) pid->accumulator = pid->limit;
-    if (pid->accumulator < pid->limit) pid->accumulator = -pid->limit;
+    if (pid->accumulator < -pid->limit) pid->accumulator = -pid->limit;
 
     // Calculate the derivative
     pid->derivative = (error - pid->error)/ dt;
@@ -37,6 +45,24 @@ void pid_update(PID* pid, int16_t error, int16_t dt) {
     pid->error = error;
 }
 
-float pid_get_command(PID* pid) {
-    return pid->kp * pid->error + pid->ki * pid->accumulator + pid->kd * pid->derivative;
+// **************************************************************
+// pid_get_command: Gets the PID control from the PID object
+//  (Getter)
+float
+pid_get_command(PID* pid)
+{
+    float value = (pid->kp*pid->error) + (pid->ki*pid->accumulator) + (pid->kd*pid->derivative);
+    if (value > pid->max_output) { value = pid->max_output; }
+    if (value < -pid->max_output) { value = -pid->max_output; }
+    return value;
+}
+
+// **************************************************************
+// pid_reset: Resets the PID for testing purposes.
+//  (Setter)
+void
+pid_reset(PID* pid)
+{
+    pid->accumulator = 0;
+    pid->derivative = 0;
 }

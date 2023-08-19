@@ -18,7 +18,7 @@
 #include "utils/uartstdio.h"
 #include "driverlib/rom.h"
 #include "driverlib/uart.h"
-#include "drivers/buttons.h"
+
 #include "queue.h"
 #include "FreeRTOS.h"
 #include "task.h"

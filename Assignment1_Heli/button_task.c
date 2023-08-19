@@ -189,6 +189,7 @@ void Button_Task(void *pvParameters)
                 {
 
                     // Pass the value of the button pressed to Button_LED_Task.
+                    /*
                     if(xQueueSend(g_pLEDQueue, &Button, portMAX_DELAY) != pdPASS)
                     {
                         //
@@ -200,6 +201,7 @@ void Button_Task(void *pvParameters)
                         {
                         }
                     }
+                    */
 
                 }
             }

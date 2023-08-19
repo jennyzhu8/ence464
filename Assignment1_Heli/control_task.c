@@ -95,10 +95,6 @@ Control_Task(void *pvParameters)
 
         if(xQueueReceive(g_pALTQueue, &height, pdMS_TO_TICKS(125)) == pdPASS) // ticks to wait must be > 0 so the task doesn't get stuck here
         {
-            //prints the Current Altitude
-            xSemaphoreTake(g_pUARTSemaphore, portMAX_DELAY);
-            UARTprintf("Altitude = %d    ", height);
-            xSemaphoreGive(g_pUARTSemaphore);
 
             vTaskDelayUntil(&ui16LastTime, ui32SwitchDelay / portTICK_RATE_MS);
 
@@ -106,13 +102,18 @@ Control_Task(void *pvParameters)
             height_error = target_height - height;
             control_update(height_error, 0);
 
+            //prints the Current Altitude
+            xSemaphoreTake(g_pUARTSemaphore, portMAX_DELAY);
+            UARTprintf("Altitude = %d    ", height);
+            xSemaphoreGive(g_pUARTSemaphore);
+
             //prints the Current Height Error
             xSemaphoreTake(g_pUARTSemaphore, portMAX_DELAY);
             UARTprintf("Error = %d    ", height_error);
             xSemaphoreGive(g_pUARTSemaphore);
         }
-
     }
+    //end of while(1)
 }
 
 // *******************************************************
@@ -120,7 +121,7 @@ Control_Task(void *pvParameters)
 //  each PID controller for the system.
 void
 initialiseControl(void) {
-    pid_init(&main_rotor, 1.0, 0, 1.0, 100.0);
+    pid_init(&main_rotor, 1.0, 0, 1.0, 100.0, 20); //PID_object, Kp, Ki, Kd, accumulator limit, max_pid_output
     //pid_init(&tail, 0.2f, 2.0f, 0.0f, 300.0f);
 }
 
@@ -135,11 +136,11 @@ control_update(int16_t alt_error, int16_t yaw_error) {
 
     pwm = PWM_MID_VALUE + (int)pid_get_command(&main_rotor);
 
-    if (pwm > PWM_MAX) {
-        pwm = PWM_MAX;
-    } else if (pwm < PWM_MIN) {
-        pwm = PWM_MIN;
-    }
+//    if (pwm > PWM_MAX) {
+//        pwm = PWM_MAX;
+//    } else if (pwm < PWM_MIN) {
+//        pwm = PWM_MIN;
+//    }
     // printing out raw PID control value
 
     raw = pid_get_command(&main_rotor);

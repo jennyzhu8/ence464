@@ -8,7 +8,7 @@
 #define CONTROL_TASK_H_
 
 // Stepping size from 0-100%, step size of 10% results in 11 separate values to the set the motor to
-#define STEP_SIZE_HEIGHT 25
+#define STEP_SIZE_HEIGHT 10
 
 // PWM configuration
 #define PWM_START_RATE_HZ  250
