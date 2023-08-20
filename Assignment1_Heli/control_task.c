@@ -145,7 +145,7 @@ control_update(int16_t alt_error, int16_t yaw_error) {
 
     raw = pid_get_command(&main_rotor);
     xSemaphoreTake(g_pUARTSemaphore, portMAX_DELAY);
-    UARTprintf("PWM = %d\n", raw);
+    UARTprintf("PWM = %d\n", pwm);
     xSemaphoreGive(g_pUARTSemaphore);
 
     //pid_update(&tail, yaw_error, CONTROL_DT);
