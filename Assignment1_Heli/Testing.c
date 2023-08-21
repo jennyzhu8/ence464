@@ -84,6 +84,9 @@ test_PID (void)
     pid_reset(&g_test_PID);
     pid_update(&g_test_PID, error, PID_DT);
     value = (int)pid_get_command(&g_test_PID);
+    UARTprintf("\nInput: %d\n", error);
+    UARTprintf("Output: %d\n", value);
+    UARTprintf("Expected: -20\n");
     assert(value == -20);
 
     //Test case 2:
@@ -91,6 +94,9 @@ test_PID (void)
     pid_reset(&g_test_PID);
     pid_update(&g_test_PID, error, PID_DT);
     value = (int)pid_get_command(&g_test_PID);
+    UARTprintf("\nInput: %d\n", error);
+    UARTprintf("Output: %d\n", value);
+    UARTprintf("Expected: [-20, -1]\n");
     assert((value >= -20 ) && (value < 0));
 
     //Test case 3:
@@ -98,6 +104,9 @@ test_PID (void)
     pid_reset(&g_test_PID);
     pid_update(&g_test_PID, error, PID_DT);
     value = (int)pid_get_command(&g_test_PID);
+    UARTprintf("\nInput: %d\n", error);
+    UARTprintf("Output: %d\n", value);
+    UARTprintf("Expected: 0\n");
     assert(value == 0);
 
     //Test case 4:
@@ -105,6 +114,9 @@ test_PID (void)
     pid_reset(&g_test_PID);
     pid_update(&g_test_PID, error, PID_DT);
     value = (int)pid_get_command(&g_test_PID);
+    UARTprintf("\nInput: %d\n", error);
+    UARTprintf("Output: %d\n", value);
+    UARTprintf("Expected: [1, 20]\n");
     assert((value <= 20 ) && (value > 0));
 
     //Test case 5:
@@ -112,6 +124,9 @@ test_PID (void)
     pid_reset(&g_test_PID);
     pid_update(&g_test_PID, error, PID_DT);
     value = (int)pid_get_command(&g_test_PID);
+    UARTprintf("\nInput: %d\n", error);
+    UARTprintf("Output: %d\n", value);
+    UARTprintf("Expected: 20\n");
     assert(value == 20);
 }
 

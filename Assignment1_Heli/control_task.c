@@ -61,7 +61,7 @@ Control_Task(void *pvParameters)
     uint8_t button;
     portTickType ui16LastTime;
     uint32_t ui32SwitchDelay = 25;
-    int8_t target_height = 50;
+    int8_t target_height = 0;
     uint8_t height;
     int16_t height_error;
 
@@ -121,7 +121,7 @@ Control_Task(void *pvParameters)
 //  each PID controller for the system.
 void
 initialiseControl(void) {
-    pid_init(&main_rotor, 1.0, 0, 1.0, 100.0, 20); //PID_object, Kp, Ki, Kd, accumulator limit, max_pid_output
+    pid_init(&main_rotor, 2, 4, 2, 100.0, 30); //PID_object, Kp, Ki, Kd, accumulator limit, max_pid_output
     //pid_init(&tail, 0.2f, 2.0f, 0.0f, 300.0f);
 }
 
@@ -136,11 +136,7 @@ control_update(int16_t alt_error, int16_t yaw_error) {
 
     pwm = PWM_MID_VALUE + (int)pid_get_command(&main_rotor);
 
-//    if (pwm > PWM_MAX) {
-//        pwm = PWM_MAX;
-//    } else if (pwm < PWM_MIN) {
-//        pwm = PWM_MIN;
-//    }
+
     // printing out raw PID control value
 
     raw = pid_get_command(&main_rotor);

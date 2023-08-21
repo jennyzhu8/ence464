@@ -51,7 +51,7 @@ pid_update(PID* pid, int16_t error, int16_t dt)
 float
 pid_get_command(PID* pid)
 {
-    float value = (pid->kp*pid->error) + (pid->ki*pid->accumulator) + (pid->kd*pid->derivative);
+    float value = (pid->error/pid->kp) + (pid->accumulator*pid->ki) + (pid->kd*pid->derivative);
     if (value > pid->max_output) { value = pid->max_output; }
     if (value < -pid->max_output) { value = -pid->max_output; }
     return value;
